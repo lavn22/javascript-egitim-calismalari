@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Girilen iki değer arasındaki sayıların toplamı ve ortalaması
+        var s1,s2;
+        s1=Number(prompt("1.sayıyı girin: "));
+        s2=Number(prompt("2.sayıyı girin: "));
+        var toplam=0,ort;
+        var sayac=0;
+        for (var i=s1;i<=s2;i++){
+            toplam+=i;
+            sayac++;
+        }
+        ort=toplam/sayac;
+        console.log("toplam= "+toplam);
+        console.log("ortalama= "+ort);
+    </script>
+</body>
+</html>

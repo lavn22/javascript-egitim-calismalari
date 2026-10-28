@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Girilen sayının asal sayı olup olmadığını bulma
+        var sayi,sayac=0;
+        var asal=true;  
+        sayi=Number(prompt("Sayı giriniz:"));
+
+        if(sayi<2){
+            document.write("Asal değil");
+        }
+        else if(sayi==2){
+            document.write("Asaldır");
+        }
+        else {
+            for (var i=2;i<=sayi/2;i++){
+            if (sayi%i==0){
+                sayac++;
+            }
+        }
+        if (sayac>0){
+            document.write("Asal değil");
+        }
+        else{
+            document.write("Asaldır");
+        }
+        }
+        
+
+    </script>
+</body>
+</html>

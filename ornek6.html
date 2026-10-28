@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Ders harf notu hesaplama
+        var vize,final,puan;
+        vize=Number(prompt("Vize notunu girin:"));
+        final=Number(prompt("Final notu girin:"));
+        puan=(vize*0.4)+(final*0.6);
+        
+        if(puan>=90 && puan<=100){
+            alert("Harf notunuz :AA")
+        }
+        else if(puan>=80 && puan<=89){
+            alert("Harf notunuz :BA")
+        }
+        else if(puan>=70 && puan<=79){
+            alert("Harf notunuz :BB")
+        }
+        else if(puan>=60 && puan<=69){
+            alert("Harf notunuz :CB")
+        }
+        else if(puan>=50 && puan<=59){
+            alert("Harf notunuz :CC")
+        }
+        else if(puan>=45 && puan<=49){
+            alert("Harf notunuz :DC")
+        }
+        else {
+            alert("Harf notunuz :FF")
+        }
+        
+    </script>
+</body>
+</html>
