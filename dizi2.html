@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var toplam=0,ort;
+        var n=Number(prompt("Lütfen dizi boyutunu giriniz:"));
+        var sayilar= new Array(n);
+        for(var i=0;i<n;i++){
+            sayilar[i]=Number(prompt("sayı girin: "));
+            toplam+=sayilar[i];
+        }
+        document.write("Girdiğiniz sayılar: "+sayilar);
+        ort=toplam/n;
+        document.write("<br>Toplam= "+toplam+"<br>Ortalama= "+ort);
+    </script>
+</body>
+</html>
