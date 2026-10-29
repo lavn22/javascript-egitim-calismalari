@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Üçgenin alanını hesaplama
+        class ucgenAlan{
+            taban=0;
+            yukseklik=0;
+
+            alan(){
+                return(this.taban*this.yukseklik)/2;
+            }
+        }
+
+        var u1=new ucgenAlan();
+        u1.taban=Number(prompt("taban değeri girin: "));
+        u1.yukseklik=Number(prompt("yükseklik değeri girin:"));
+        document.write("Alan= "+u1.alan());
+
+    </script>
+</body>
+</html>

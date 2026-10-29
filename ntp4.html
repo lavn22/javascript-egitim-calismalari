@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Dikdörtgenin alanını ve çevresini hesaplama nesne ile
+        class Hesapla{
+            constructor(kisaKenar,uzunKenar){
+                this.kisaKenar=kisaKenar;
+                this.uzunKenar=uzunKenar;
+            }
+            alan(){
+                return kisaKenar*uzunKenar;
+            }
+            cevre(){
+                return 2*(kisaKenar+uzunKenar);
+            }
+        }
+
+        var kisaKenar,uzunKenar;
+        kisaKenar=Number(prompt("Dikdörtgenin kısa kenarını giriniz: "));
+        uzunKenar=Number(prompt("Dikdörtgenin uzun kenarını giriniz: "));
+        var dikdortgen1= new Hesapla(kisaKenar,uzunKenar);
+        document.write("Dikdörtgenin alanı= "+dikdortgen1.alan());
+        document.write("<hr>");
+        document.write("Dikdörtgenin çevresi= "+dikdortgen1.cevre());
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Daire alanı ve çevresi hesaplama nesnesi
+        class daire{
+            constructor(yaricap){
+                this.yaricap=yaricap;
+            }
+            alan(){
+                return 3.14*this.yaricap*this.yaricap;
+            }
+            cevre(){
+                return 2*3.14*this.yaricap;
+            }
+        }
+
+        var r=Number(prompt("Dairenin yarıçapını giriniz: "));
+        var daire1= new daire(r);
+        document.write("Dairenin alanı= "+daire1.alan());
+        document.write("<hr>");
+        document.write("Dairenin çevresi= "+daire1.cevre());
+    </script>
+</body>
+</html>

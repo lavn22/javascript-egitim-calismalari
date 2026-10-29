@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Sınıf tanımlama
+        class Uye{
+            constructor(ad,soyad,yas){
+                this.ad=ad;
+                this.soyad=soyad;
+                this.yas=yas;
+            }
+        }
+        
+        //nesne oluşturma
+        var uye1= new Uye("Ahmet","Kaya",30);
+        var uye2= new Uye("Ayşe","Demir",25);
+        document.write("Üye 1::: "+uye1.ad+" "+uye1.soyad+" "+uye1.yas+"<br>");
+        document.write("Üye 2::: "+uye2.ad+" "+uye2.soyad+" "+uye2.yas+"<br>");
+
+        var ad,soyad,yas;
+        ad=prompt("Adınızı giriniz: ");
+        soyad=prompt("Soyadınızı giriniz: ");
+        yas=prompt("Yaşınızı giriniz: ");
+        var uye3= new Uye(ad,soyad,yas);
+        document.write("Üye 3::: "+uye3.ad+" "+uye3.soyad+" "+uye3.yas+"<br>");
+    </script>
+</body>
+</html>
