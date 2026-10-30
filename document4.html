@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="tarih"></p>
+    <script>
+        function tarih(){
+            var an= new Date();
+            var yil=an.getFullYear();
+            var ay=an.getMonth()+1;
+            var gun=an.getDate();
+            var Tarih="Tarih: "+gun+"/"+ay+"/"+yil;
+            document.getElementById("tarih").innerHTML=Tarih;7
+        }
+        tarih();
+    </script>
+</body>
+</html>

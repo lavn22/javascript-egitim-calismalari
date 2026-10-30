@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="manset">İlk Manşet</h1>
+    <p id="ilk"></p>
+    <p id="ikinci"></p>
+    <img src="bayrak.jpg" id="bayrak" onmouseover="karabayrak()" onmouseout="albayrak()">
+
+    <script>
+        //içerik değiştirme 
+        document.getElementById("manset").innerHTML="Son Manşet!!!";
+        document.getElementById("ilk").innerHTML="<b>İlk paragraf...</b>";
+        document.getElementById("ikinci").innerHTML="<i>ikinci paragraf...</i>";
+        
+        //görselleştirme
+        document.getElementById("manset").style.color="red";
+        document.getElementById("manset").style.fontFamily="Arial";
+
+        //özellik değiştirme 
+        var bayrak=document.getElementById("bayrak");
+        function albayrak(){
+            bayrak.src="bayrak.jpg";
+        }
+        function karabayrak(){
+            bayrak.src="bayrak_siyah.jpg";
+        }
+    </script>
+</body>
+</html>

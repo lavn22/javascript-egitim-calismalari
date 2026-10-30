@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form ile Throw Uygulaması</h2>
+    <form>
+        Ders notu:<input type="text" id="dersnotu"><br><br>
+        <input type="button" value="Kontrol Et" onclick="kontrol()">
+    </form>
+    <p id="hata"></p>
+    <p id="girilendeger"></p>
+    <script>
+        function kontrol(){
+            var dersnotu,hata;
+            hata=document.getElementById("hata");
+            hata.innerHTML="";
+            dersnotu=document.getElementById("dersnotu").value;
+
+            try{
+                if(dersnotu==""){
+                    throw "Ders notu boş bırakılamaz";
+                }
+                if(isNaN(dersnotu)){
+                    throw "Ders notu sayı olmalıdır";
+                }
+                dersnotu=parseInt(dersnotu);
+                if(dersnotu<0 || dersnotu>100){
+                    throw "Ders notu 0-100 arasında olmalıdır";
+                }
+            }
+            catch(err){
+                hata.innerHTML="Hata: "+err;
+            }
+            finally{
+                document.getElementById("girilendeger").innerHTML="Girilen değer: "+dersnotu;
+            }
+        }
+    </script>
+</body>
+</html>
